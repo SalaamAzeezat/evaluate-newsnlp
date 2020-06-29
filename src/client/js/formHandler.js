@@ -45,7 +45,7 @@ function handleSubmit(event) {
     return
   }
   console.log("::: Form Submitted :::")  
-  postData('http://localhost:8081/sentiment', {'formText': formText}) // send the formText with get or post
+  postData('http://localhost:8081/sentiment', {'text': formText}) // send the formText with get or post
     .then(function (data) {
       console.log(data);
       updateUI(data);
