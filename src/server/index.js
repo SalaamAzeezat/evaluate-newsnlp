@@ -35,7 +35,7 @@ let aylienData = [];
 
 // Callback function to complete GET '/sentiment'
 app.post('/sentiment', function (req, res) {
-    let formText = req.body.formText;
+    let formText = req.body.text;
  console.log(formText)
     textapi.sentiment({
         url: formText,
